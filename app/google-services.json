@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "927294833209",
+    "project_id": "deli-771b8",
+    "storage_bucket": "deli-771b8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927294833209:android:1dd22cf5e3e52ab37583e8",
+        "android_client_info": {
+          "package_name": "com.example.deli"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB03deX2_6cbtuJoT2Fdqw1AjmYkQNSoZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
