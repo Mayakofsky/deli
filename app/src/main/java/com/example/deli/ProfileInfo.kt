@@ -1,3 +1,5 @@
+package com.example.deli
+
 import android.R.attr.text
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -15,14 +17,14 @@ import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.text.style.TextAlign
 
 @Composable
-fun SecondScreen(innerPadding: PaddingValues, onBack: () -> Unit) {
+fun ProfileInfo(innerPadding: PaddingValues, onBack: () -> Unit) {
     Box(
         modifier = Modifier
             .fillMaxSize()
             .padding(innerPadding), // Тот самый отступ
     ) {
         Text(
-            text = "Сформировать событие",
+            text = "Профиль",
             modifier = Modifier.align(Alignment.TopCenter)
         )
 
@@ -30,7 +32,7 @@ fun SecondScreen(innerPadding: PaddingValues, onBack: () -> Unit) {
             onClick = { onBack() },
             modifier = Modifier.align(Alignment.BottomCenter)
         ) {
-            Text("Создать")
+            Text("Назад")
         }
 
     }

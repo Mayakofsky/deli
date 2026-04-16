@@ -1,5 +1,7 @@
 package com.example.deli
+
 import SecondScreen
+import DobavitDolshnika
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -28,7 +30,11 @@ class MainActivity : ComponentActivity() {
                         composable("screen_1") {
                             MainScreen(
                                 innerPadding = innerPadding,
-                                onNavigate = { navController.navigate("screen_2") }
+                                onNavigateToEvent = { navController.navigate("screen_2") },
+                                onNavigateToDebtor = { navController.navigate("screen_3") },
+                                onNavigateToProfile = { navController.navigate("screen_1") },
+                                onNavigateToProfileInfo = {navController.navigate("screen_4")}
+
                             )
                         }
                         composable("screen_2") {
@@ -37,6 +43,19 @@ class MainActivity : ComponentActivity() {
                                 onBack = { navController.popBackStack() }
                             )
                         }
+                        composable("screen_3") {
+                            DobavitDolshnika(
+                                innerPadding = innerPadding,
+                                onBack = { navController.popBackStack() }
+                            )
+                        }
+                        composable("screen_4") {
+                            ProfileInfo(
+                              innerPadding = innerPadding,
+                              onBack = {navController.popBackStack() }
+                            )
+                        }
+
                     }
                 }
             }
@@ -44,4 +63,3 @@ class MainActivity : ComponentActivity() {
     }
 
 }
-
